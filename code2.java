@@ -1,9 +1,26 @@
- class code2 {
-    public static void printNumber(int num) {
-        System.out.println("The number is: " + num);
+interface Flyable {
+    void fly();
+}
+
+interface Swimmable {
+    void swim();
+}
+
+class Duck implements Flyable,Swimmable {
+    public void fly() {
+        System.out.println("Duck flies");
     }
     
+    public void swim() {
+        System.out.println("Duck swims");
+    }
+
+}
+
+public class code2 {
     public static void main(String[] args) {
-        printNumber(42);   
+        Duck duck = new Duck();
+        duck.fly();   
+        duck.swim();  
     }
 }
