@@ -1,18 +1,10 @@
-class Animal {
-    Animal(String name) {
-        System.out.println("Animal: " + name);
-    }
-}
+class Circle {
+    double radius;
 
-class Dog extends Animal {
-    Dog(String name) {
-        super(name);  // Calls parent constructor
-        System.out.println("Dog created");
-    }
-}
-
-public class code6 {
     public static void main(String[] args) {
-        Dog dog = new Dog("Buddy");
+        Circle c = new Circle();
+        c.radius = 7;
+
+        System.out.println("Area: " + (3.14 * c.radius * c.radius));
     }
 }
